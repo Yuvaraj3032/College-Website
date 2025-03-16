@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Cell - Our College</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #005f73;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            margin-top: 150px;
+        }
+
+        header h1 {
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.5em;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        section .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #005f73;
+        }
+
+        section p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        section .image {
+            width: 45%;
+            border-radius: 10px;
+        }
+
+        /* Functions List */
+        .functions ul {
+            list-style: none;
+            font-size: 1.2em;
+        }
+
+        .functions li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            font-size: 1.2em;
+            padding: 20px;
+            background-color: #005f73;
+            color: #fff;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="media">
+        <!-- Contact Info (Phone and Email) -->
+        <div class="info-links">
+            <a href="tel:+914426533140">
+                <i class="fas fa-phone icon"></i> 044 - 26533140
+            </a>
+            <a href="tel:+914426530978">
+                <i class="fas fa-phone icon"></i> 044 - 26530978
+            </a>
+            <a href="mailto:mail@mgcchennai.ac.in">
+                <i class="fas fa-envelope icon"></i> mail@mgcchennai.ac.in
+            </a>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <i class="fab fa-facebook icon"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <i class="fab fa-instagram icon"></i> Instagram
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank">
+                <i class="fab fa-twitter icon"></i> Twitter
+            </a>
+        </div>
+    </section>
+
+    <section class="box">
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img src="image/lion_processed.png" id="logo"></a>
+                <h3 class="name">JOY COLLEGE OF ARTS & SCIENCE</h3>
+            </div>
+            <div class="nav-links" id="navLinks">
+
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Academic</a>
+                        <ul class="submenu">
+                            <li><a href="Administators.html">Administrator</a></li>
+                            <li><a href="Hod.html">HOD's</a></li>
+                            <li><a href="Staff.html">Faculty</a></li>
+                            <li><a href="Program.html">Programs</a></li>
+                            <li><a href="Committee.html">Committee</a></li>
+                            <li><a href="cells.html">Celles</a></li>
+                            <li><a href="rrc.html">RRC</a></li><br>
+                            <li><a href="yrc.html">YRC</a></li>
+                            <li><a href="ncc.html">NCC</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Admission</a>
+                        <ul class="submenu">
+                            <li><a href="Admission.html">Admission 2024-2025</a></li>
+                            <li><a href="Course.html">Departments</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Facilities</a>
+                        <ul class="submenu">
+                            <li><a href="Sports.html">Sports</a></li>
+                            <li><a href="library.html">Library</a></li>
+                            <li><a href="Transport.html">Transport</a></li>
+                            <li><a href="Canteen.html">Canteen</a></li>
+                            <li><a href="Infrastructure.html">Infrastructure</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Examination</a>
+                        <ul class="submenu">
+                            <li><a href="examcell.html">Exam Cell</a></li>
+                           
+                            <li><a href="https://exam.unom.ac.in/results/ugresult.asp">Result</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contact_page.html">Contact</a></li>
+                    <li><a href="About_us.html">About us</a></li>
+                </ul>
+            </div>
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+        </nav>
+    </section>
+
+   
+
+    <header>
+        <h1>Exam Cell</h1>
+        <p>Ensuring Smooth Exam Processes and Student Support</p>
+    </header>
+
+    <section class="intro">
+        <div class="content">
+            <h2>About Exam Cell</h2>
+            <p>The Exam Cell at our college is responsible for ensuring the smooth and efficient conduct of all
+                examinations. From scheduling exams to handling student queries and results, the Exam Cell plays a vital
+                role in managing the academic assessment processes with transparency and fairness.</p>
+        </div>
+        <img src="image/exam1.jpeg" alt="Exam Cell Office" class="image">
+    </section>
+
+    <section class="functions">
+        <h2>Functions of the Exam Cell</h2>
+        <ul>
+            <li>Exam Scheduling and Timetabling</li>
+            <li>Conducting Examinations (Theory and Practical)</li>
+            <li>Managing Student Attendance and Exam Enrollments</li>
+            <li>Result Declaration and Re-evaluation Requests</li>
+            <li>Issuing Transcripts and Certificates</li>
+            <li>Providing Exam-related Guidelines and Notifications</li>
+        </ul>
+    </section>
+
+    <section class="importance">
+        <div class="content">
+            <h2>Importance of the Exam Cell</h2>
+            <p>The Exam Cell ensures that all exams are conducted smoothly, adhering to college policies and
+                regulations. It also assists students in resolving any exam-related issues, such as result discrepancies
+                or the need for re-evaluation. Its efficient functioning helps maintain a fair, transparent, and
+                supportive environment for students during their academic assessments.</p>
+        </div>
+        <img src="image/exam2.jpeg"  alt="Exam Cell Operations" class="image">
+    </section>
+
+    <footer>
+        <p>For exam-related queries, contact the Exam Cell at <a
+                href="mailto:examcell@college.com">examcell@college.com</a></p>
+    </footer>
+</body>
+
+</html>

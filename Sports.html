@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Sports</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Header Section */
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url('../image/background.jpg');
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .text-box {
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            text-align: center;
+        }
+
+        .text-box h1 {
+            font-size: 62px;
+            font-weight: bold;
+        }
+
+        .text-box p {
+            margin: 10px 0 40px;
+            font-size: 14px;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: yellow;
+            border: 2px solid yellow;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero-btn:hover {
+            color: black;
+            background: yellow;
+            transition: 0.5s;
+        }
+
+        /* Body and general layout */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #ecf1ec;
+            color: white;
+            padding: 20px;
+            margin-top: 150px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: blue;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: blue;
+        }
+
+        /* Sports section */
+        .sports {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* Individual sport cards */
+        .sport {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sport h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .sport p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        /* Image styling */
+        .sport img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="media">
+        <!-- Contact Info (Phone and Email) -->
+        <div class="info-links">
+            <a href="tel:+914426533140">
+                <i class="fas fa-phone icon"></i> 044 - 26533140
+            </a>
+            <a href="tel:+914426530978">
+                <i class="fas fa-phone icon"></i> 044 - 26530978
+            </a>
+            <a href="mailto:mail@mgcchennai.ac.in">
+                <i class="fas fa-envelope icon"></i> mail@mgcchennai.ac.in
+            </a>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <i class="fab fa-facebook icon"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <i class="fab fa-instagram icon"></i> Instagram
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank">
+                <i class="fab fa-twitter icon"></i> Twitter
+            </a>
+        </div>
+    </section>
+
+    <section class="box">
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img src="image/lion_processed.png" id="logo"></a>
+                <h3 class="name">JOY COLLEGE OF ARTS & SCIENCE</h3>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Academic</a>
+                        <ul class="submenu">
+                            <li><a href="Administators.html">Administrator</a></li>
+                            <li><a href="Hod.html">HOD's</a></li>
+                            <li><a href="Staff.html">Faculty</a></li>
+                            <li><a href="Program.html">Programs</a></li>
+                            <li><a href="Committee.html">Committee</a></li>
+                            <li><a href="cells.html">Celles</a></li>
+                            <li><a href="rrc.html">RRC</a></li><br>
+                            <li><a href="yrc.html">YRC</a></li>
+                            <li><a href="ncc.html">NCC</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Admission</a>
+                        <ul class="submenu">
+                            <li><a href="Admission.html">Admission 2024-2025</a></li>
+                            <li><a href="Course.html">Departments</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Facilities</a>
+                        <ul class="submenu">
+                            <li><a href="Sports.html">Sports</a></li>
+                            <li><a href="library.html">Library</a></li>
+                            <li><a href="Transport.html">Transport</a></li>
+                            <li><a href="Canteen.html">Canteen</a></li>
+                            <li><a href="Infrastructure.html">Infrastructure</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Examination</a>
+                        <ul class="submenu">
+                            <li><a href="examcell.html">Exam Cell</a></li>
+                            <li><a href="https://exam.unom.ac.in/results/ugresult.asp">Result</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contact_page.html">Contact</a></li>
+                    <li><a href="About_us.html">About us</a></li>
+                </ul>
+            </div>
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+        </nav>
+    </section>
+
+    <header>
+        <h1>College Sports</h1>
+        <p>Explore the various sports activities and facilities available at our college.</p>
+    </header>
+
+    <section class="sports">
+        <div class="sport">
+            <h2>Football</h2>
+            <img src="image/football.jpeg" alt="Football">
+            <p>Our football team competes at various levels and provides great opportunities for students to showcase their skills.</p>
+        </div>
+        <div class="sport">
+            <h2>Basketball</h2>
+            <img src="image/BasketBall.jpeg" alt="Basketball">
+            <p>Join our basketball team and experience the thrill of fast-paced games and teamwork.</p>
+        </div>
+        <div class="sport">
+            <h2>Cricket</h2>
+            <img src="image/Cricket.jpeg" alt="Cricket">
+            <p>Cricket is one of the most popular sports in our college, with active participation in intercollegiate tournaments.</p>
+        </div>
+        <div class="sport">
+            <h2>Badminton</h2>
+            <img src="image/Badminton.jpeg" alt="Badminton">
+            <p>Our badminton courts are always buzzing with energy, and we have professional coaching available.</p>
+        </div>
+        <div class="sport">
+            <h2>Volleyball</h2>
+            <img src="image/Volleyball.jpeg" alt="Volleyball">
+            <p>Join our volleyball team and enjoy exciting matches while improving your skills.</p>
+        </div>
+        <div class="sport">
+            <h2>Tennis</h2>
+            <img src="image/Tennis.jpeg" alt="Tennis">
+            <p>Our tennis program offers professional coaching and opportunities to compete in regional tournaments.</p>
+        </div>
+        <div class="sport">
+            <h2>Table Tennis</h2>
+            <img src="image/Table Tennis.jpeg" alt="Table Tennis">
+            <p>Table tennis is a fast-paced and exciting sport, and our college has state-of-the-art facilities for it.</p>
+        </div>
+        <div class="sport">
+            <h2>Athletics</h2>
+            <img src="image/Athletics.jpeg" alt="Athletics">
+            <p>From sprinting to long-distance running, our athletics program helps students achieve their fitness goals.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MGC College Sports</p>
+    </footer>
+</body>
+
+</html>

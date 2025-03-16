@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committees at JOY College</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+    <style>
+        
+        /* Header Section */
+        header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 150px; /* Adjust based on the height of .media and .box */
+}
+
+        .text-box {
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            text-align: center;
+        }
+
+        .text-box h1 {
+            font-size: 62px;
+            font-weight: bold;
+        }
+
+        .text-box p {
+            margin: 10px 0 40px;
+            font-size: 14px;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: yellow;
+            border: 2px solid yellow;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero-btn:hover {
+            color: black;
+            background: yellow;
+            transition: 0.5s;
+        }
+
+        /* General Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Committees Section Styling */
+        .committees {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Individual Committee Styling */
+        .committee {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .committee h2 {
+            font-size: 1.6rem;
+            color: #007bff;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .committee p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* Hover Effects */
+        .committee:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .committee img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="media">
+        <!-- Contact Info (Phone and Email) -->
+        <div class="info-links">
+            <a href="tel:+914426533140">
+                <i class="fas fa-phone icon"></i> 044 - 26533140
+            </a>
+            <a href="tel:+914426530978">
+                <i class="fas fa-phone icon"></i> 044 - 26530978
+            </a>
+            <a href="mailto:mail@mgcchennai.ac.in">
+                <i class="fas fa-envelope icon"></i> mail@joychennai.ac.in
+            </a>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <i class="fab fa-facebook icon"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <i class="fab fa-instagram icon"></i> Instagram
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank">
+                <i class="fab fa-twitter icon"></i> Twitter
+            </a>
+        </div>
+    </section>
+
+    <section class="box">
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img src="image/lion_processed.png" id="logo"></a>
+                <h3 class="name">JOY COLLEGE OF ARTS & SCIENCE</h3>
+            </div>
+            <div class="nav-links" id="navLinks">
+
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Academic</a>
+                        <ul class="submenu">
+                            <li><a href="Administators.html">Administrator</a></li>
+                            <li><a href="Hod.html">HOD's</a></li>
+                            <li><a href="Staff.html">Faculty</a></li>
+                            <li><a href="Program.html">Programs</a></li>
+                            <li><a href="Committee.html">Committee</a></li>
+                            <li><a href="cells.html">Celles</a></li>
+                            <li><a href="rrc.html">RRC</a></li><br>
+                            <li><a href="yrc.html">YRC</a></li>
+                            <li><a href="ncc.html">NCC</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Admission</a>
+                        <ul class="submenu">
+                            <li><a href="Admission.html">Admission 2024-2025</a></li>
+                            <li><a href="Course.html">Departments</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Facilities</a>
+                        <ul class="submenu">
+                            <li><a href="Sports.html">Sports</a></li>
+                            <li><a href="library.html">Library</a></li>
+                            <li><a href="Transport.html">Transport</a></li>
+                            <li><a href="Canteen.html">Canteen</a></li>
+                            <li><a href="Infrastructure.html">Infrastructure</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Examination</a>
+                        <ul class="submenu">
+                            <li><a href="examcell.html">Exam Cell</a></li>
+                            <li><a href="https://exam.unom.ac.in/results/ugresult.asp">Result</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contact_page.html">Contact</a></li>
+                    <li><a href="About_us.html">About us</a></li>
+                </ul>
+            </div>
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+        </nav>
+    </section>
+    <header>
+        <h1>Committees at JOY College</h1>
+        <p>Explore the various committees that help drive the college’s activities and events.</p>
+    </header>
+
+    <section class="committees">
+        <div class="committee">
+            <img src="image/Sportscommitte.jpeg" alt="Sports Committee">
+            <h2>Sports Committee</h2>
+            <p>Responsible for organizing all sports events and activities for students.</p>
+        </div>
+        <div class="committee">
+            <img src="image/culturalcommmitte.jpeg" alt="Cultural Committee">
+            <h2>Cultural Committee</h2>
+            <p>Organizes cultural events and festivals to promote creativity and talent.</p>
+        </div>
+        <div class="committee">
+            <img src="image/Eventcommitte.jpeg" alt="Event Management Committee">
+            <h2>Event Management Committee</h2>
+            <p>Handles the planning and execution of major college events.</p>
+        </div>
+        <div class="committee">
+            <img src="image/Tech committee.jpeg" alt="Tech Committee">
+            <h2>Tech Committee</h2>
+            <p>Focuses on organizing tech events and keeping the college technologically up-to-date.</p>
+        </div>
+        <div class="committee">
+            <img src="image/displine committee.jpeg" alt="Disciplinary Committee">
+            <h2>Disciplinary Committee</h2>
+            <p>Ensures the maintenance of discipline and decorum within the college.</p>
+        </div>
+        <div class="committee">
+            <img src="image/placement committee.jpeg" alt="Placement Committee">
+            <h2>Placement Committee</h2>
+            <p>Works to secure internships and job placements for the students.</p>
+        </div>
+        <div class="committee">
+            <img src="image/environment committee.jpeg" alt="Environmental Committee">
+            <h2>Environmental Committee</h2>
+            <p>Promotes sustainability and environmental awareness among students.</p>
+        </div>
+        <div class="committee">
+            <img src="image/library committe.jpeg" alt="Library Committee">
+            <h2>Library Committee</h2>
+            <p>Oversees the smooth functioning of the college library and ensures its resources are utilized
+                effectively.</p>
+        </div>
+        <div class="committee">
+            <img src="image/alumi committe.jpeg" alt="Alumni Committee">
+            <h2>Alumni Committee</h2>
+            <p>Maintains strong connections with the alumni and organizes reunions and alumni events.</p>
+        </div>
+        <div class="committee">
+            <img src="image/social committe.jpeg" alt="Social Welfare Committee">
+            <h2>Social Welfare Committee</h2>
+            <p>Organizes social initiatives and community service programs.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 JOY College Committees</p>
+    </footer>
+</body>
+
+</html>

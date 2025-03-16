@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College HODs</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Header Section */
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url('../image/background.jpg');
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .text-box {
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            text-align: center;
+        }
+
+        .text-box h1 {
+            font-size: 62px;
+            font-weight: bold;
+        }
+
+        .text-box p {
+            margin: 10px 0 40px;
+            font-size: 14px;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: yellow;
+            border: 2px solid yellow;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero-btn:hover {
+            color: black;
+            background: yellow;
+            transition: 0.5s;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            margin-top: 150px;
+            padding: 30px;
+            background-color: #f0edf7;
+            box-shadow: 0 4px 8px rgba(17, 16, 70, 0.911);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .members-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .member-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(9, 5, 218, 0.877);
+            width: 100%;
+            max-width: 300px;
+            padding: 25px;
+            text-align: center;
+            transition: box-shadow 0.3s ease-in-out;
+            margin: 0 auto;
+        }
+
+        .member-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .member-card img {
+            border-radius: 10%;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 15px;
+        }
+
+        .member-card h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .member-card p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .role {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        @media (max-width: 900px) {
+            .members-section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .members-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="media">
+        <!-- Contact Info (Phone and Email) -->
+        <div class="info-links">
+            <a href="tel:+914426533140">
+                <i class="fas fa-phone icon"></i> 044 - 26533140
+            </a>
+            <a href="tel:+914426530978">
+                <i class="fas fa-phone icon"></i> 044 - 26530978
+            </a>
+            <a href="mailto:mail@mgcchennai.ac.in">
+                <i class="fas fa-envelope icon"></i> mail@mgcchennai.ac.in
+            </a>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <i class="fab fa-facebook icon"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <i class="fab fa-instagram icon"></i> Instagram
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank">
+                <i class="fab fa-twitter icon"></i> Twitter
+            </a>
+        </div>
+    </section>
+
+    <section class="box">
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img src="image/lion_processed.png" id="logo"></a>
+                <h3 class="name">JOY COLLEGE OF ARTS & SCIENCE</h3>
+            </div>
+            <div class="nav-links" id="navLinks">
+
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Academic</a>
+                        <ul class="submenu">
+                            <li><a href="Administators.html">Administrator</a></li>
+                            <li><a href="Hod.html">HOD's</a></li>
+                            <li><a href="Staff.html">Faculty</a></li>
+                            <li><a href="Program.html">Programs</a></li>
+                            <li><a href="Committee.html">Committee</a></li>
+                            <li><a href="cells.html">Celles</a></li>
+                            <li><a href="rrc.html">RRC</a></li><br>
+                            <li><a href="yrc.html">YRC</a></li>
+                            <li><a href="ncc.html">NCC</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Admission</a>
+                        <ul class="submenu">
+                            <li><a href="Admission.html">Admission 2024-2025</a></li>
+                            <li><a href="Course.html">Departments</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Facilities</a>
+                        <ul class="submenu">
+                            <li><a href="Sports.html">Sports</a></li>
+                            <li><a href="library.html">Library</a></li>
+                            <li><a href="Transport.html">Transport</a></li>
+                            <li><a href="Canteen.html">Canteen</a></li>
+                            <li><a href="Infrastructure.html">Infrastructure</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Examination</a>
+                        <ul class="submenu">
+                            <li><a href="examcell.html">Exam Cell</a></li>
+                            <li><a href="https://exam.unom.ac.in/results/ugresult.asp">Result</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contact_page.html">Contact</a></li>
+                    <li><a href="About_us.html">About us</a></li>
+                </ul>
+            </div>
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+        </nav>
+    </section>
+
+
+    <div class="container">
+        <h1>Heads of Departments (HODs)</h1>
+
+        <div class="members-section">
+
+            <!-- HOD of English -->
+            <div class="member-card">
+                <img src="Scientist/Abdul.jpeg" alt="Principal">
+                <h3>Dr. A. P. J. Abdul Kalam </h3>
+                <p class="role">Department of English</p>
+            </div>
+
+            <!-- HOD of Computer Science -->
+            <div class="member-card">
+                <img src="Scientist/alexander graham bell.jpeg" alt="Chairman">
+                <h3>Mr. Alexander Graham Bell</h3>
+                <p class="role">Department of Computer Science</p>
+            </div>
+
+            <!-- HOD of Mathematics -->
+            <div class="member-card">
+                <img src="Scientist/satyendra.jpeg" alt="Father">
+                <h3>Rev. Theoretical physicist</h3>
+                <p class="role">Department of strategy</p>
+            </div>
+
+            <!-- HOD of Physics -->
+            <div class="member-card">
+                <img src="Scientist/einstein.jpeg" alt="Father">
+                <h3>Rev. Theoretical physicist</h3>
+                <p class="role">Department of Physics</p>
+            </div>
+
+            <!-- HOD of Chemistry -->
+            <div class="member-card">
+                <img src="Scientist/galileo.jpeg" alt="Vice Principal Shift 1">
+                <h3>Dr. Galileo Galilei</h3>
+                <p class="role">Department of Chemistry</p>
+            </div>
+
+            <!-- HOD of Commerce -->
+            <div class="member-card">
+                <img src="Scientist/marie curie.jpeg" alt="Vice Principal Shift 2">
+                <h3>Dr.Marie Curie</h3>
+                <p class="role">Department of Commerce</p>
+            </div>
+
+            <!-- HOD of Psychology -->
+            <div class="member-card">
+                <img src="Scientist/netwon.jpeg" alt="Academic Coordinator">
+                <h3>Dr .Isaac Newton/h3>
+                <p class="role">Department of Psycho</p>
+            </div>
+
+            <!-- HOD of Visual Communication -->
+            <div class="member-card">
+                <img src="Scientist/stephen.jpeg" alt="Finance Officer">
+                <h3>Dr. Stephen Hawking</h3>
+                <p class="role">Department of Visual Communication</p>
+            </div>
+
+            <!-- HOD of Electronics and Communication Science -->
+            <div class="member-card">
+                <img src="Scientist/testla.jpeg" alt="Controller of Examinations">
+                <h3>Dr. Testla</h3>
+                <p class="role">Department of Electronics and Communication Science</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

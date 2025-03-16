@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cells at MGC College</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Header Section */
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url('../image/background.jpg');
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .text-box {
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            text-align: center;
+        }
+
+        .text-box h1 {
+            font-size: 62px;
+            font-weight: bold;
+        }
+
+        .text-box p {
+            margin: 10px 0 40px;
+            font-size: 14px;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: yellow;
+            border: 2px solid yellow;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero-btn:hover {
+            color: black;
+            background: yellow;
+            transition: 0.5s;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background-color: white;
+            color: #2b118b;
+            text-align: center;
+            padding: 40px;
+            margin-top: 150px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Cells section styling */
+        .cells {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .cell {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cell:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .cell h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .cell p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .cell img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="media">
+        <!-- Contact Info (Phone and Email) -->
+        <div class="info-links">
+            <a href="tel:+914426533140">
+                <i class="fas fa-phone icon"></i> 044 - 26533140
+            </a>
+            <a href="tel:+914426530978">
+                <i class="fas fa-phone icon"></i> 044 - 26530978
+            </a>
+            <a href="mailto:mail@mgcchennai.ac.in">
+                <i class="fas fa-envelope icon"></i> mail@mgcchennai.ac.in
+            </a>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <i class="fab fa-facebook icon"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <i class="fab fa-instagram icon"></i> Instagram
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank">
+                <i class="fab fa-twitter icon"></i> Twitter
+            </a>
+        </div>
+    </section>
+
+    <section class="box">
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img src="image/lion_processed.png" id="logo"></a>
+                <h3 class="name">JOY COLLEGE OF ARTS & SCIENCE</h3>
+            </div>
+            <div class="nav-links" id="navLinks">
+
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Academic</a>
+                        <ul class="submenu">
+                            <li><a href="Administators.html">Administrator</a></li>
+                            <li><a href="Hod.html">HOD's</a></li>
+                            <li><a href="Staff.html">Faculty</a></li>
+                            <li><a href="Program.html">Programs</a></li>
+                            <li><a href="Committee.html">Committee</a></li>
+                            <li><a href="cells.html">Celles</a></li>
+                            <li><a href="rrc.html">RRC</a></li><br>
+                            <li><a href="yrc.html">YRC</a></li>
+                            <li><a href="ncc.html">NCC</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Admission</a>
+                        <ul class="submenu">
+                            <li><a href="Admission.html">Admission 2024-2025</a></li>
+                            <li><a href="Course.html">Departments</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Facilities</a>
+                        <ul class="submenu">
+                            <li><a href="Sports.html">Sports</a></li>
+                            <li><a href="library.html">Library</a></li>
+                            <li><a href="Transport.html">Transport</a></li>
+                            <li><a href="Canteen.html">Canteen</a></li>
+                            <li><a href="Infrastructure.html">Infrastructure</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Examination</a>
+                        <ul class="submenu">
+                            <li><a href="examcell.html">Exam Cell</a></li>
+                            <li><a href="https://exam.unom.ac.in/results/ugresult.asp">Result</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contact_page.html">Contact</a></li>
+                    <li><a href="About_us.html">About us</a></li>
+                </ul>
+            </div>
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+        </nav>
+    </section>
+
+    <header>
+        <h1>Cells at MGC College</h1>
+        <p>Explore the various student-driven cells that enrich college life.</p>
+    </header>
+
+    <section class="cells">
+        <div class="cell">
+            <h2>Academic Cell</h2>
+            <img src="cell/academic cell.jpeg" alt="Academic Cell">
+            <p>The Academic Cell is focused on enhancing the academic experience by organizing workshops, guest
+                lectures, and other educational programs.</p>
+        </div>
+
+        <div class="cell">
+            <h2>Cultural Cell</h2>
+            <img src="cell/cultural cell.png " alt="Cultural Cell">
+            <p>The Cultural Cell promotes artistic expression by organizing cultural festivals, dance, music
+                performances, and art exhibitions.</p>
+        </div>
+
+        <div class="cell">
+            <h2>Sports Cell</h2>
+            <img src="cell/sportscell.png" alt="Sports Cell">
+            <p>The Sports Cell focuses on fostering a healthy and competitive spirit through various inter-college and
+                intra-college sports events.</p>
+        </div>
+
+        <div class="cell">
+            <h2>Entrepreneurship Cell</h2>
+            <img src="cell/entcell.png" alt="Entrepreneurship Cell">
+            <p>The Entrepreneurship Cell supports students in launching their own startups by providing guidance,
+                resources, and mentorship.</p>
+        </div>
+
+        <div class="cell">
+            <h2>Debate Cell</h2>
+            <img src="cell/depute.jpeg" alt="Debate Cell">
+            <p>The Debate Cell organizes debates and discussions on current affairs and relevant topics to enhance
+                students' critical thinking and speaking skills.</p>
+        </div>
+
+        <div class="cell">
+            <h2>Literary Cell</h2>
+            <img src="cell/librarycell.png" alt="Literary Cell">
+            <p>The Literary Cell aims to promote reading, writing, and other forms of literary creativity through
+                workshops, competitions, and writing clubs.</p>
+        </div>
+
+        <div class="cell">
+            <h2>Environment Cell</h2>
+            <img src="cell/environmentcell.jpeg" alt="Environment Cell">
+            <p>The Environment Cell works to raise awareness about environmental issues and promote sustainable living
+                through various campaigns and initiatives.</p>
+        </div>
+
+        <div class="cell">
+            <h2>Innovation Cell</h2>
+            <img src="cell/innovation.png" alt="Innovation Cell">
+            <p>The Innovation Cell nurtures creative ideas and innovations by conducting hackathons, innovation
+                challenges, and brainstorming sessions.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MGC College | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Joy College</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* FAQ Page Styling */
+        .faq-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .faq-container h1 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .faq-container p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Search Bar */
+        #faq-search {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* FAQ Items */
+        .faq {
+            margin-top: 20px;
+        }
+
+        .faq-item {
+            background: #f9f9f9;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* FAQ Question */
+        .faq-question {
+            width: 100%;
+            background: #020341ef;
+            color: white;
+            padding: 15px;
+            border: none;
+            text-align: left;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        .faq-question i {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Expand FAQ Answer */
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            text-align: left;
+            font-size: 16px;
+            color: #333;
+            border-top: 1px solid #ddd;
+        }
+
+        .faq-answer a {
+            color: #e63946;
+            text-decoration: none;
+        }
+
+        .faq-answer a:hover {
+            text-decoration: underline;
+        }
+
+        /* When FAQ is Active */
+        .faq-answer.active {
+            display: block;
+        }
+
+        .faq-question.active i {
+            transform: rotate(180deg);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .faq-container {
+                padding: 20px;
+            }
+
+            .faq-question {
+                font-size: 16px;
+            }
+
+            .faq-answer {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="media" >
+        <!-- Contact Info (Phone and Email) -->
+        <div class="info-links">
+            <a href="tel:+914426533140">
+                <i class="fas fa-phone icon"></i> 044 - 26533140
+            </a>
+            <a href="tel:+914426530978">
+                <i class="fas fa-phone icon"></i> 044 - 26530978
+            </a>
+            <a href="mailto:mail@mgcchennai.ac.in">
+                <i class="fas fa-envelope icon"></i> mail@mgcchennai.ac.in
+            </a>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <i class="fab fa-facebook icon"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <i class="fab fa-instagram icon"></i> Instagram
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank">
+                <i class="fab fa-twitter icon"></i> Twitter
+            </a>
+        </div>
+    </section>
+
+    <section class="box">
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img src="image/lion_processed.png" id="logo"></a>
+                <h3 class="name">JOY COLLEGE OF ARTS & SCIENCE</h3>
+            </div>
+            <div class="nav-links" id="navLinks">
+
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Academic</a>
+                        <ul class="submenu">
+                            <li><a href="Administators.html">Administrator</a></li>
+                            <li><a href="Hod.html">HOD's</a></li>
+                            <li><a href="Staff.html">Faculty</a></li>
+                            <li><a href="Program.html">Programs</a></li>
+                            <li><a href="Committee.html">Committee</a></li>
+                            <li><a href="cells.html">Celles</a></li>
+                            <li><a href="rrc.html">RRC</a></li><br>
+                            <li><a href="yrc.html">YRC</a></li>
+                            <li><a href="ncc.html">NCC</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Admission</a>
+                        <ul class="submenu">
+                            <li><a href="Admission.html">Admission 2024-2025</a></li>
+                            <li><a href="Course.html">Departments</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Facilities</a>
+                        <ul class="submenu">
+                            <li><a href="Sports.html">Sports</a></li>
+                            <li><a href="library.html">Library</a></li>
+                            <li><a href="Transport.html">Transport</a></li>
+                            <li><a href="Canteen.html">Canteen</a></li>
+                            <li><a href="Infrastructure.html">Infrastructure</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Examination</a>
+                        <ul class="submenu">
+                            <li><a href="examcell.html">Exam Cell</a></li>
+                            <li><a href="https://exam.unom.ac.in/results/ugresult.asp">Result</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contact_page.html">Contact</a></li>
+                    <li><a href="About_us.html">About us</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </section>
+
+
+
+
+    <!-- FAQ Section -->
+    <section class="faq-container" style="margin-top: 150px;">
+        <h1>Frequently Asked Questions (FAQ)</h1>
+        <p>Find answers to commonly asked questions below.</p>
+
+        <!-- Search Bar -->
+        <input type="text" id="faq-search" placeholder="Search FAQs..." onkeyup="filterFAQs()">
+
+        <!-- FAQ Items -->
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-question">What programs are offered at Joy College? <i
+                        class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>We offer a variety of undergraduate and postgraduate programs in Arts, Science, Commerce, and
+                        more. Visit our <a href="Program.html">Programs Page</a> for details.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How can I apply for admission? <i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Admissions are open online. Visit our <a href="Admission.html">Admissions Page</a> to apply and
+                        check eligibility criteria.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What are the contact details for the admission office? <i
+                        class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>You can reach us at 044 - 26533140 or email us at <a
+                            href="mailto:mail@mgcchennai.ac.in">mail@mgcchennai.ac.in</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Does the college provide hostel facilities? <i
+                        class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Yes, we provide separate hostel facilities for boys and girls with all essential amenities.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What are the placement opportunities? <i
+                        class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Our college has tie-ups with reputed companies, and we offer campus placements. Visit our <a
+                            href="Placement.html">Placement Page</a> for details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                answer.classList.toggle('active');
+                button.classList.toggle('active');
+            });
+        });
+
+        // FAQ Search Functionality
+        function filterFAQs() {
+            let input = document.getElementById('faq-search').value.toLowerCase();
+            let questions = document.querySelectorAll('.faq-question');
+
+            questions.forEach(question => {
+                let text = question.innerText.toLowerCase();
+                let parent = question.parentElement;
+                if (text.includes(input)) {
+                    parent.style.display = "block";
+                } else {
+                    parent.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

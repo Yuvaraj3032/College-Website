@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    
+    <title>College Courses Page</title>
+    <style>
+      
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #0f13ff7e;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 96%;
+            margin: 200px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1,
+        h2 {
+            color: #343a40;
+        }
+
+        .course-section {
+            margin-bottom: 40px;
+        }
+
+        .course-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .course-list li {
+            background: #e9ecef;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .course-list li:hover {
+            background-color: #33414e;
+        }
+
+        .course-highlights {
+            display: none;
+            background-color: #f1f3f5;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #0d6efd;
+        }
+
+        .show {
+            display: block;
+        }
+
+
+
+    </style>
+    <script>
+        function toggleHighlights(id) {
+            const highlights = document.getElementById(id);
+            highlights.classList.toggle('show');
+        }
+    </script>
+</head>
+
+<body>
+    <section class="media">
+        <!-- Contact Info (Phone and Email) -->
+        <div class="info-links">
+            <a href="tel:+914426533140">
+                <i class="fas fa-phone icon"></i> 044 - 26533140
+            </a>
+            <a href="tel:+914426530978">
+                <i class="fas fa-phone icon"></i> 044 - 26530978
+            </a>
+            <a href="mailto:mail@mgcchennai.ac.in">
+                <i class="fas fa-envelope icon"></i> mail@mgcchennai.ac.in
+            </a>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <i class="fab fa-facebook icon"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <i class="fab fa-instagram icon"></i> Instagram
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank">
+                <i class="fab fa-twitter icon"></i> Twitter
+            </a>
+        </div>
+    </section>
+
+    <section class="box">
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img src="image/lion_processed.png" id="logo"></a>
+                <h3 class="name">JOY COLLEGE OF ARTS & SCIENCE</h3>
+            </div>
+            <div class="nav-links" id="navLinks">
+
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Academic</a>
+                        <ul class="submenu">
+                            <li><a href="Administators.html">Administrator</a></li>
+                            <li><a href="Hod.html">HOD's</a></li>
+                            <li><a href="Staff.html">Faculty</a></li>
+                            <li><a href="Program.html">Programs</a></li>
+                            <li><a href="Committee.html">Committee</a></li>
+                            <li><a href="cells.html">Celles</a></li>
+                            <li><a href="rrc.html">RRC</a></li><br>
+                            <li><a href="yrc.html">YRC</a></li>
+                            <li><a href="ncc.html">NCC</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Admission</a>
+                        <ul class="submenu">
+                            <li><a href="Admission.html">Admission 2024-2025</a></li>
+                            <li><a href="Course.html">Departments</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Facilities</a>
+                        <ul class="submenu">
+                            <li><a href="Sports.html">Sports</a></li>
+                            <li><a href="library.html">Library</a></li>
+                            <li><a href="Transport.html">Transport</a></li>
+                            <li><a href="Canteen.html">Canteen</a></li>
+                            <li><a href="Infrastructure.html">Infrastructure</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Examination</a>
+                        <ul class="submenu">
+                            <li><a href="examcell.html">Exam Cell</a></li>
+                          
+                            <li><a href="https://exam.unom.ac.in/results/ugresult.asp">Result</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contact_page.html">Contact</a></li>
+                    <li><a href="About_us.html">About us</a></li>
+                </ul>
+            </div>
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+        </nav>
+    </section>
+
+    <div class="container">
+        <h1>College Courses</h1>
+
+        <section class="course-section">
+            <h2>UG Shift-1 Courses</h2>
+            <ul class="course-list">
+                <li onclick="toggleHighlights('ba-english')">B.A. English</li>
+                <div id="ba-english" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: English Literature and Language</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2 in any discipline</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('ba-tamil')">B.A. Tamil</li>
+                <div id="ba-tamil" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Tamil Literature and Linguistics</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2 in any discipline</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('bcom-af')">B.Com. Accounting & Finance</li>
+                <div id="bcom-af" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Accounting and Financial Management</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('bcom-cs')">B.Com. Corporate Secretaryship</li>
+                <div id="bcom-cs" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Corporate Governance and Secretarial Practices</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('bcom-general')">B.Com. General</li>
+                <div id="bcom-general" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: General Commerce and Trade Practices</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('bsc-cs')">B.Sc. Computer Science</li>
+                <div id="bsc-cs" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Software Development and Programming</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2 with Science stream</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('bsc-ece')">B.Sc. Electronics and Communication Science</li>
+                <div id="bsc-ece" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Electronics, Communication Systems</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2 with Science stream</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('bsc-math')">B.Sc. Mathematics</li>
+                <div id="bsc-math" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Pure and Applied Mathematics</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2 with Mathematics</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('bsc-psychology')">B.Sc. Psychology</li>
+                <div id="bsc-psychology" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Clinical and Behavioral Psychology</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2 in any discipline</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('bsc-visual')">B.Sc. Visual Communication</li>
+                <div id="bsc-visual" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Media Studies and Design</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('bba')">BBA</li>
+                <div id="bba" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Business Administration and Management</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('bca')">BCA</li>
+                <div id="bca" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Computer Applications and Programming</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+            </ul>
+        </section>
+
+        <section class="course-section">
+            <h2>UG Shift-2 Courses</h2>
+            <ul class="course-list">
+                <li onclick="toggleHighlights('bcom-cs-shift2')">B.Com. Corporate Secretaryship</li>
+                <div id="bcom-cs-shift2" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Corporate Governance and Secretarial Practices</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('bcom-general-shift2')">B.Com. General</li>
+                <div id="bcom-general-shift2" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: General Commerce and Trade Practices</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('bsc-cs-shift2')">B.Sc. Computer Science</li>
+                <div id="bsc-cs-shift2" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Software Development and Programming</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2 with Science stream</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('bba-shift2')">BBA</li>
+                <div id="bba-shift2" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Business Administration and Management</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('bca-shift2')">BCA</li>
+                <div id="bca-shift2" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Computer Applications and Programming</li>
+                        <li>Duration: 3 years</li>
+                        <li>Eligibility: 10+2</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+            </ul>
+        </section>
+
+        <section class="course-section">
+            <h2>PG Shift-1 Courses</h2>
+            <ul class="course-list">
+                <li onclick="toggleHighlights('mcom-general')">M.Com. General</li>
+                <div id="mcom-general" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: General Commerce and Finance</li>
+                        <li>Duration: 2 years</li>
+                        <li>Eligibility: Graduation in Commerce</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('msc-cs')">M.Sc. Computer Science</li>
+                <div id="msc-cs" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Advanced Computing and Research</li>
+                        <li>Duration: 2 years</li>
+                        <li>Eligibility: Graduation in Computer Science</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+
+                <li onclick="toggleHighlights('msw')">MSW</li>
+                <div id="msw" class="course-highlights">
+                    <strong>Key Highlights:</strong>
+                    <ul>
+                        <li>Specializations: Social Work and Community Development</li>
+                        <li>Duration: 2 years</li>
+                        <li>Eligibility: Graduation in any discipline</li>
+                        <li>Selection Criteria: Merit-based</li>
+                    </ul>
+                </div>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
